@@ -5,21 +5,44 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CaptioChat</title>
   <link rel="icon" href="./assets/favicon.ico" />
+
+  <!-- (opcional) SEO/compartilhamento -->
+  <meta name="description" content="Automação simples para Instagram e Facebook. Conecte sua conta com um clique e use tokens com segurança no seu n8n." />
+  <meta property="og:title" content="CaptioChat" />
+  <meta property="og:description" content="Automação simples para Instagram e Facebook." />
+  <meta property="og:image" content="https://www.captiochat.com/assets/logo.png" />
+  <meta property="og:url" content="https://www.captiochat.com/" />
+  <meta name="theme-color" content="#0f172a" />
+
   <style>
-  :root{--bg:#0f172a;--fg:#e2e8f0;--muted:#94a3b8;--primary:#2563eb}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:radial-gradient(1200px 700px at 20% -10%,rgba(37,99,235,.25),transparent),var(--bg);color:var(--fg)}
-  .nav{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:16px auto;padding:0 16px}
-  .brand{display:flex;gap:10px;align-items:center;font-weight:800}
-  .brand img{width:30px;height:30px;border-radius:8px}
-  .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;max-width:1100px;margin:40px auto;padding:0 16px;align-items:center}
-  h1{font-size:56px;line-height:1.05;margin:0 0 12px}
-  p{color:var(--muted);font-size:18px;margin:0 0 24px}
-  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;border:0;border-radius:12px;padding:14px 20px;font-weight:700;text-decoration:none}
-  .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);backdrop-filter:blur(8px);border-radius:20px;padding:24px}
-  .hero{height:340px;border-radius:20px;background:radial-gradient(220px 140px at 50% 40%, rgba(20,121,255,.35), transparent), radial-gradient(320px 220px at 60% 60%, rgba(34,193,255,.25), transparent), #0b1222; display:flex;align-items:center;justify-content:center}
-  .hero img{width:140px;height:140px;border-radius:22px;filter:drop-shadow(0 0 40px rgba(20,121,255,.5))}
-  .footer{max-width:1100px;margin:40px auto 24px;padding:0 16px;color:#94a3b8;font-size:13px}
+    :root{--bg:#0f172a;--fg:#e2e8f0;--muted:#94a3b8;--primary:#2563eb}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 700px at 20% -10%,rgba(37,99,235,.25),transparent),
+        var(--bg);
+      color:var(--fg)
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;max-width:1100px;margin:16px auto;padding:0 16px}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800}
+    .brand img{width:30px;height:30px;border-radius:8px}
+    .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;max-width:1100px;margin:40px auto;padding:0 16px;align-items:center}
+    h1{font-size:56px;line-height:1.05;margin:0 0 12px}
+    p{color:var(--muted);font-size:18px;margin:0 0 24px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;border:0;border-radius:12px;padding:14px 20px;font-weight:700;text-decoration:none}
+    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);backdrop-filter:blur(8px);border-radius:20px;padding:24px}
+    .hero{height:340px;border-radius:20px;background:
+      radial-gradient(220px 140px at 50% 40%, rgba(20,121,255,.35), transparent),
+      radial-gradient(320px 220px at 60% 60%, rgba(34,193,255,.25), transparent),
+      #0b1222; display:flex;align-items:center;justify-content:center}
+    .hero img{width:140px;height:140px;border-radius:22px;filter:drop-shadow(0 0 40px rgba(20,121,255,.5))}
+    .footer{max-width:1100px;margin:40px auto 24px;padding:0 16px;color:#94a3b8;font-size:13px}
+    @media (max-width:900px){
+      .wrap{grid-template-columns:1fr;gap:24px}
+      h1{font-size:40px}
+    }
   </style>
 </head>
 <body>
@@ -28,14 +51,16 @@
       <img src="./assets/logo.png" alt="CaptioChat"/>
       <span>CaptioChat</span>
     </div>
-    <a class="btn" href="./comecar.html">COMEÇAR</a>
+    <!-- CTA corrige para o APP -->
+    <a class="btn" href="https://app.captiochat.com/comecar">COMEÇAR</a>
   </div>
 
   <div class="wrap">
     <div>
       <h1>Automação simples para IG & Facebook</h1>
       <p>Conecte sua conta com um clique. Tokens ficam seguros no nosso backend e prontos para o seu n8n.</p>
-      <a class="btn" href="./comecar.html">COMEÇAR</a>
+      <!-- CTA corrige para o APP -->
+      <a class="btn" href="https://app.captiochat.com/comecar">COMEÇAR</a>
     </div>
     <div class="card hero">
       <img src="./assets/logo.png" alt="CaptioChat"/>
