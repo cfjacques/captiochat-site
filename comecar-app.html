@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>CaptioChat – Começar</title>
-  <!-- caminho ABSOLUTO no app -->
+  <!-- favicon e logo: caminhos ABSOLUTOS dentro do app -->
   <link rel="icon" href="/assets/favicon.ico"/>
   <style>
     :root{
@@ -34,7 +34,6 @@
 <body>
   <div class="nav">
     <div class="brand">
-      <!-- caminho ABSOLUTO no app -->
       <a href="/"><img src="/assets/logo.png" alt="CaptioChat"/></a>
       <span>CaptioChat</span>
     </div>
@@ -79,18 +78,15 @@
   </div>
 
   <script>
-    function param(name){
-      const url = new URL(location.href);
-      return url.searchParams.get(name);
-    }
-    function tenant(){
-      // por enquanto: usa query (?tenant_id=) OU demo_show
-      return param('tenant_id') || 'demo_show';
+    // Lê tenant_id da URL (se não vier, usa 'demo_show') — sem mostrar nada na tela
+    function getTenant() {
+      const t = new URL(location.href).searchParams.get('tenant_id');
+      return t || 'demo_show';
     }
     function goMessenger(){
-      const origin = window.location.href;
+      const origin = location.href;
       const url = '/connect/meta'
-        + '?tenant_id=' + encodeURIComponent(tenant())
+        + '?tenant_id=' + encodeURIComponent(getTenant())
         + '&channel='   + encodeURIComponent('messenger')
         + '&origin='    + encodeURIComponent(origin);
       location.href = url;
